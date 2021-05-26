@@ -34,10 +34,9 @@ payload = {
 }
 requests.post(webhook_url, data=json.dumps(payload))
 
-# setting up the desired message you want to see once the stock is at a certain level
+# sender email and email receiving message
 sender_email = "example@gmail.com"
 rec_email = "example@gmail.com"
-
 password = " "
 
 # message you want sent to you
