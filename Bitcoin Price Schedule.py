@@ -12,9 +12,6 @@ import stat
 st = os.stat('Bitcoin Price Schedule.py')
 os.chmod('Bitcoin Price Schedule.py', st.st_mode | stat.S_IEXEC)
 
-# put here your webhook_url obtained from the steps above
-webhook_url = " https://hooks.slack.com/services/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"
-
 # url for bitcoin stock info
 btc_url = "https://query1.finance.yahoo.com/v7/finance/quote?&symbols=BTC-USD&fields=extendedMarketChange,\
 extendedMarketChangePercent,extendedMarketPrice,extendedMarketTime,regularMarketChange,regularMarketChangePercent,\
@@ -32,7 +29,6 @@ payload = {
     "text": f"${btc_price:,.2f}",
     "icon_emoji": ":dollar:"
 }
-requests.post(webhook_url, data=json.dumps(payload))
 
 # sender email and email receiving message
 sender_email = "example@gmail.com"
