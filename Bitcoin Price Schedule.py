@@ -2,7 +2,6 @@
 
 
 import smtplib
-import numpy as np
 import requests
 import json
 import os
