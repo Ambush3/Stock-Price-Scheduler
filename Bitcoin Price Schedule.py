@@ -19,12 +19,6 @@ response = requests.get(btc_url)
 data = response.json()
 btc_price = data["quoteResponse"]["result"][0]["regularMarketPrice"]
 
-payload = {
-    "channel": "#random",
-    "username": "BTC PRICE",
-    "text": f"${btc_price:,.2f}",
-    "icon_emoji": ":dollar:"
-}
 
 # sender email and email receiving message
 sender_email = "example@gmail.com"
