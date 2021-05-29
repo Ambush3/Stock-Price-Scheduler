@@ -1,6 +1,5 @@
 import smtplib
 import requests
-import json
 import os
 import stat
 
